@@ -67,11 +67,10 @@
       }
 
       header .logo {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: auto;
         margin: 0 auto;
-        border-radius: 50%;
-        object-fit: cover;
+        object-fit: contain;
       }
 
       header p {
@@ -233,8 +232,8 @@
 
       @media (min-width: 640px) {
         header .logo {
-          width: 240px;
-          height: 240px;
+          width: 180px;
+          height: auto;
         }
         h1 {
           font-size: 3rem;
@@ -252,7 +251,7 @@
     <header>
       <img
         class="logo"
-        src="/__l5e/assets-v1/1dde5f05-5737-4fd2-8063-94f34f637c18/logo.png"
+        src="assets/arte-em-tecido-logo.png"
         alt="Arte em Tecido Artesanato"
       />
       <p>Peças exclusivas feitas à mão, com carinho em cada ponto.</p>
@@ -311,7 +310,7 @@
       ];
 
       const whatsapp = (texto) =>
-        "https://wa.me/?text=" + encodeURIComponent("Olá! Tenho interesse em: " + texto);
+        "https://wa.me/5511999169967?text=" + encodeURIComponent("Olá! Tenho interesse em: " + texto);
 
       const grid = document.getElementById("grid");
       produtos.forEach((p) => {
