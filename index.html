@@ -1,732 +1,345 @@
 <!doctype html>
-<html lang="pt-BR"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260827-23-46f0e0f","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/50d846425a1e5082.telemetry_sdk.js" integrity="sha512-Otbex+ztlVbcEGql0rXGd/3E3ee/hqAntg6DeuUEMG6pIPbXGOSvZbFZVzknAXi1tH/itQ+ijEhOTr2aWj6CXg=="></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo de artesanatos</title>
-  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&amp;family=Caveat:wght@400;500;600;700&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --forest: #254235;
-      --forest-deep: #173126;
-      --cream: #f8f3ea;
-      --rose: #bf655e;
-      --header-pink: #f6e6db;
-      --hero-pastel: #f8d5df;
-      --hero-peach: #f7e5da;
-      --terracotta: #bf7048;
-      --ink: #26352d;
-      --muted: #667268;
-      --line: #ded7ca;
-    }
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arte em Tecido | Catálogo de Artesanato</title>
+    <meta
+      name="description"
+      content="Peças exclusivas Arte em Tecido: toalhas bordadas ou adesivadas e cadernos forrados feitos à mão."
+    />
+    <meta property="og:title" content="Arte em Tecido | Catálogo de Artesanato" />
+    <meta
+      property="og:description"
+      content="Toalhas bordadas e cadernos forrados feitos à mão. Peças exclusivas."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #b04a5a;
+        --secondary: #c9a876;
+        --background: #f3e1d3;
+        --accent: #8c3a47;
+        --foreground: #4a3b35;
+        --card: #fdf6ef;
+        --border: #e3cdbb;
+        --muted: #7a675c;
+        --radius: 18px;
+        --shadow: 0 10px 30px -12px rgba(140, 58, 71, 0.28);
+      }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      width: 100%;
-      font-family: "DM Sans", sans-serif;
-      color: var(--ink);
-      background: var(--cream);
-    }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-    button, input { font: inherit; }
-    button:focus-visible, input:focus-visible, a:focus-visible {
-      outline: 3px solid #e8a17e;
-      outline-offset: 3px;
-    }
+      body {
+        background: var(--background);
+        color: var(--foreground);
+        font-family: "Montserrat", system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
 
-    .page-shell { width: 100%; overflow: hidden; }
-    .site-width { width: 100%; max-width: 1240px; margin: 0 auto; }
+      img {
+        display: block;
+        max-width: 100%;
+      }
 
-    .hero {
-      position: relative;
-      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
-      display: flex;
-      align-items: center;
-      isolation: isolate;
-      background: var(--hero-pastel) !important;
-    }
+      .wrap {
+        width: 100%;
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
 
-    .hero-image {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: auto;
-      width: 48%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      z-index: -2;
-      opacity: .94;
-      filter: saturate(.9) brightness(1.02);
-    }
+      header {
+        text-align: center;
+        padding: 40px 20px 24px;
+      }
 
-    .hero-shade {
-      position: absolute;
-      inset: 0;
-      z-index: -1;
-      background: linear-gradient(90deg, #f8d5df 0%, #f8d5df 40%, rgba(248, 213, 223, .98) 54%, rgba(248, 213, 223, .72) 72%, rgba(248, 213, 223, 0) 100%);
-    }
+      header .logo {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        border-radius: 50%;
+        object-fit: cover;
+      }
 
-    .header {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      right: 1rem;
-      z-index: 20;
-      width: auto;
-      border: 1px solid rgba(191,101,94,.18);
-      border-radius: 1.25rem;
-      background: var(--header-pink);
-      box-shadow: 0 8px 24px rgba(74, 48, 52, .08);
-    }
+      header p {
+        margin-top: 8px;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
 
-    .header .canva-text,
-    .header .canva-link,
-    .header .nav-link {
-      color: var(--forest) !important;
-    }
 
-    .brand-mark {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: clamp(100px, 15vw, 210px);
-      height: 50px;
-      border: 0;
-      border-radius: 0;
-      color: var(--rose);
-    }
 
-    .brand-logo {
-      display: block;
-      width: auto !important;
-      height: 100% !important;
-      max-width: 100% !important;
-      object-fit: contain;
-    }
 
-    .nav-link {
-      color: rgba(255,255,255,.86);
-      text-decoration: none;
-      font-size: .84rem;
-      font-weight: 700;
-      letter-spacing: .05em;
-      text-transform: uppercase;
-      transition: color 180ms ease;
-    }
-    .nav-link:hover { color: var(--rose) !important; }
+      main {
+        padding: 32px 0 8px;
+      }
 
-    .cart-trigger, .menu-trigger {
-      border: 1px solid rgba(255,255,255,.44);
-      border-radius: 999px;
-      color: #fff;
-      background: rgba(255,255,255,.09);
-      transition: background 180ms ease, transform 180ms ease;
-    }
-    .cart-trigger:hover, .menu-trigger:hover {
-      background: rgba(255,255,255,.2);
-      transform: translateY(-1px);
-    }
+      h1 {
+        font-family: "Caveat", cursive;
+        font-size: 2.4rem;
+        color: var(--primary);
+        text-align: center;
+        font-weight: 700;
+        line-height: 1.1;
+      }
 
-    .header .cart-trigger,
-    .header .menu-trigger {
-      border-color: rgba(37,66,53,.32);
-      color: var(--forest) !important;
-      background: rgba(255,255,255,.36) !important;
-    }
+      .kicker {
+        text-align: center;
+        margin-top: 6px;
+        font-size: 0.7rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--secondary);
+      }
 
-    .header .cart-trigger:hover,
-    .header .menu-trigger:hover {
-      background: rgba(255,255,255,.62) !important;
-    }
+      .grid {
+        margin-top: 28px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
 
-    .header .mobile-nav {
-      border-color: rgba(37,66,53,.18) !important;
-    }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
 
-    .hero-copy { animation: reveal 720ms ease both; }
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 18px 40px -14px rgba(140, 58, 71, 0.35);
+      }
 
-    .hero-copy .canva-text {
-      color: var(--forest) !important;
-    }
+      .card img {
+        width: 100%;
+        height: 210px;
+        object-fit: cover;
+      }
 
-    .hero-stamp {
-      display: inline-flex;
-      align-items: center;
-      gap: .55rem;
-      border: 1px solid rgba(37,66,53,.22);
-      border-radius: 999px;
-      padding: .48rem .9rem;
-      color: var(--forest) !important;
-      background: rgba(255,255,255,.44) !important;
-      font-size: .76rem;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-    }
+      .card-body {
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex: 1;
+      }
 
-    .hero h1, .section-title, .detail-title {
-      font-family: "Alegreya", serif;
-    }
+      .card h2 {
+        font-size: 1rem;
+        color: var(--accent);
+        line-height: 1.35;
+      }
 
-    .hero-scroll {
-      position: absolute;
-      right: 1.25rem;
-      bottom: 2rem;
-      display: flex;
-      align-items: center;
-      gap: .7rem;
-      color: var(--forest);
-      font-size: .75rem;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-decoration: none;
-      text-transform: uppercase;
-      transform: rotate(90deg);
-      transform-origin: right bottom;
-    }
+      .card p {
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
 
-    .catalog-section {
-      background:
-        radial-gradient(circle at 5% 5%, rgba(191,101,94,.11), transparent 25%),
-        var(--cream);
-    }
+      .row {
+        margin-top: auto;
+        padding-top: 8px;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 12px;
+      }
 
-    .search-box {
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: #fffdf9;
-      box-shadow: 0 12px 35px rgba(53, 56, 45, .08);
-    }
+      .price {
+        font-family: "Caveat", cursive;
+        font-size: 1.9rem;
+        color: var(--primary);
+        font-weight: 700;
+      }
 
-    .search-box input {
-      width: 100%;
-      border: 0;
-      outline: 0;
-      background: transparent;
-      color: var(--ink);
-    }
+      .btn {
+        flex-shrink: 0;
+        display: inline-block;
+        background: var(--primary);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 999px;
+        padding: 10px 16px;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        transition: background 0.2s ease;
+      }
 
-    .filter-chip {
-      border: 1px solid #cfc6b7;
-      border-radius: 999px;
-      padding: .65rem 1rem;
-      color: var(--forest);
-      background: transparent;
-      font-size: .88rem;
-      font-weight: 700;
-      transition: all 180ms ease;
-    }
-    .filter-chip:hover, .filter-chip.is-active {
-      border-color: var(--forest);
-      color: #fff;
-      background: var(--forest);
-      transform: translateY(-1px);
-    }
+      .btn:hover {
+        background: var(--accent);
+      }
 
-    .product-card {
-      overflow: hidden;
-      border: 1px solid #e2dbd0;
-      border-radius: 1.25rem;
-      background: #fffdf9;
-      box-shadow: 0 12px 28px rgba(65, 64, 51, .065);
-      transition: transform 220ms ease, box-shadow 220ms ease;
-    }
-    .product-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 22px 38px rgba(65, 64, 51, .13);
-    }
+      .cta {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        text-align: center;
+        padding: 26px 20px;
+        margin: 36px 0;
+      }
 
-    .product-image {
-      width: 100%;
-      height: 242px;
-      object-fit: cover;
-      transition: transform 350ms ease;
-    }
-    .product-card:hover .product-image { transform: scale(1.045); }
+      .cta h2 {
+        font-family: "Caveat", cursive;
+        font-size: 1.9rem;
+        color: var(--primary);
+      }
 
-    .category-label {
-      color: var(--terracotta);
-      font-size: .72rem;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-    }
+      .cta p {
+        margin: 8px auto 0;
+        max-width: 420px;
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
 
-    .details-button, .add-button {
-      border: 1px solid var(--forest);
-      border-radius: .7rem;
-      color: #fff;
-      background: var(--forest);
-      font-weight: 700;
-      transition: transform 180ms ease, background 180ms ease;
-    }
-    .details-button:hover, .add-button:hover {
-      background: var(--forest-deep);
-      transform: translateY(-1px);
-    }
+      .cta .btn {
+        margin-top: 18px;
+        background: var(--accent);
+        padding: 13px 24px;
+        font-size: 0.8rem;
+      }
 
-    .empty-panel {
-      border: 1px dashed #c9bca9;
-      border-radius: 1.25rem;
-      background: rgba(255,255,255,.6);
-    }
+      footer {
+        text-align: center;
+        font-size: 0.75rem;
+        color: var(--muted);
+        padding: 0 20px 40px;
+      }
 
-    .detail-overlay, .cart-overlay {
-      position: fixed;
-      inset: 0;
-      z-index: 40;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-      background: rgba(20, 37, 28, .68);
-      backdrop-filter: blur(5px);
-    }
+      footer .stitch {
+        display: none;
+      }
 
-    .detail-panel {
-      width: 100%;
-      max-width: 900px;
-      max-height: 90%;
-      overflow-y: auto;
-      border-radius: 1.35rem;
-      background: #fffdf9;
-      box-shadow: 0 24px 65px rgba(0,0,0,.28);
-      animation: panel-in 260ms ease both;
-    }
-
-    .detail-image {
-      width: 100%;
-      min-height: 280px;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .close-button {
-      display: grid;
-      place-items: center;
-      width: 42px;
-      height: 42px;
-      border: 1px solid var(--line);
-      border-radius: 50%;
-      color: var(--forest);
-      background: #fff;
-    }
-
-    .cart-overlay { justify-content: flex-end; padding: 0; }
-    .cart-panel {
-      width: min(100%, 410px);
-      height: 100%;
-      padding: 1.5rem;
-      background: #fffdf9;
-      box-shadow: -15px 0 45px rgba(0,0,0,.2);
-      animation: slide-in 260ms ease both;
-    }
-
-    .cart-icon-circle {
-      display: grid;
-      place-items: center;
-      width: 64px;
-      height: 64px;
-      margin: 2.4rem auto 1rem;
-      border-radius: 50%;
-      color: var(--rose);
-      background: #f7e6df;
-    }
-
-    footer { background: #1e382c; }
-    .footer-rule { border-color: rgba(255,255,255,.17); }
-
-    .hidden-view { display: none !important; }
-
-    @keyframes reveal {
-      from { opacity: 0; transform: translateY(18px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes panel-in {
-      from { opacity: 0; transform: translateY(15px) scale(.985); }
-      to { opacity: 1; transform: translateY(0) scale(1); }
-    }
-    @keyframes slide-in {
-      from { transform: translateX(100%); }
-      to { transform: translateX(0); }
-    }
-
-    @media (max-width: 767px) {
-      .desktop-nav { display: none; }
-      .mobile-nav { display: none; }
-      .mobile-nav.is-open { display: flex; }
-      .brand-mark { width: 60px; height: 32px; }
-      .hero-scroll { display: none; }
-      .header { left: 0.3rem; right: 0.3rem; top: 0.3rem; border-radius: 0.4rem; padding: 0.25rem !important; }
-      .header .site-width { padding: 0 !important; }
-      .header > div { padding: 0.25rem !important; gap: 0.5rem !important; }
-      .header .cart-trigger, .header .menu-trigger { width: 32px; height: 32px; font-size: 14px; }
-      .header .cart-trigger, .header .menu-trigger { padding: 0.3rem; }
-      .hero-image { width: 58%; opacity: .72; }
-      .hero-shade { background: linear-gradient(90deg, #f8d5df 0%, #f8d5df 42%, rgba(248, 213, 223, .9) 68%, rgba(248, 213, 223, 0) 100%); }
-    }
-    @media (min-width: 768px) {
-      .menu-trigger, .mobile-nav { display: none !important; }
-    }
-  </style>
-  <script src="/_sdk/b3bf9e8ac58e6ad6.data_sdk.js" type="text/javascript" integrity="sha512-otc1u9NYq9Ms5Jt//7vmhrrqR5CLPr8Jdgs6741gqniClfLMcfmC+jK/cKuQdhLv6G0esJ/FzaMS9tv0T/vj/Q=="></script>
-  <script src="/_sdk/a6de989e8af05ea5.resizing_sdk.js" type="text/javascript" integrity="sha512-cceAQMIleYr/3eg7o5WzN46w0HpgI1sxi+5kDUb7CmTjHEpgBtINDxtOpnNeUtujjui8NG0OSDgUMl0/E2lT2A=="></script>
- </head>
- <body data-template-id="__page-root" style="background: rgb(248, 243, 234);">
-  <div class="page-shell">
-  <section class="hero" aria-labelledby="hero-title" style="background: #f8d5df;">
-  <div class="hero-shade" style="background: linear-gradient(90deg, #f8d5df 0%, #f8d5df 40%, rgba(248, 213, 223, .98) 54%, rgba(248, 213, 223, .72) 72%, rgba(248, 213, 223, 0) 100%);"></div>
-    <header class="header">
-     <div class="site-width px-5 py-5 md:px-8">
-      <div class="flex items-center justify-between gap-4"><a href="#catalogo" class="flex items-center gap-3 no-underline" aria-label="Arte em Tecido Artesanato"> <span class="brand-mark" aria-hidden="true"><img data-template-id="brand-logo" class="brand-logo canva-image" loading="lazy" src="assets/arte-em-tecido-logo.png" alt="Arte em Tecido Artesanato"></span> </a>
-       <nav class="desktop-nav flex items-center gap-7" aria-label="Navegação principal"><a data-template-id="nav-catalog" class="canva-link nav-link" href="#catalogo" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Catálogo</a> <a data-template-id="nav-about" class="canva-link nav-link" href="#sobre" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">A artesã</a> <a data-template-id="nav-contact" class="canva-link nav-link" href="#contato" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Informações</a>
-       </nav>
-       <div class="flex items-center gap-2"><button id="cart-button" data-template-id="cart-button" class="canva-button cart-trigger flex items-center gap-2 px-4 py-2.5" type="button" style="background: rgba(255, 255, 255, 0.09); color: rgb(255, 255, 255);"> <i data-lucide="shopping-bag" width="17" height="17" aria-hidden="true"></i> <span class="hidden sm:inline" data-template-id="cart-label" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Sacola</span> <span id="cart-count" class="rounded-full bg-[#e8ab88] px-2 py-0.5 text-xs font-bold text-[#183126]" aria-live="polite">0</span> </button> <button id="menu-button" class="menu-trigger h-11 w-11 items-center justify-center" type="button" aria-label="Abrir menu" aria-expanded="false"> <i data-lucide="menu" width="20" height="20"></i> </button>
-       </div>
-      </div>
-      <nav id="mobile-nav" class="mobile-nav mt-5 flex-col gap-4 border-t border-white/20 pt-5" aria-label="Navegação móvel"><a data-template-id="mobile-nav-catalog" class="canva-link nav-link" href="#catalogo" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Catálogo</a> <a data-template-id="mobile-nav-about" class="canva-link nav-link" href="#sobre" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">A artesã</a> <a data-template-id="mobile-nav-contact" class="canva-link nav-link" href="#contato" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Informações</a>
-      </nav>
-     </div>
+      @media (min-width: 640px) {
+        header .logo {
+          width: 240px;
+          height: 240px;
+        }
+        h1 {
+          font-size: 3rem;
+        }
+        .grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .card h2 {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="/__l5e/assets-v1/1dde5f05-5737-4fd2-8063-94f34f637c18/logo.png"
+        alt="Arte em Tecido Artesanato"
+      />
+      <p>Peças exclusivas feitas à mão, com carinho em cada ponto.</p>
     </header>
-    <div class="site-width w-full px-5 pt-24 md:px-8 md:pt-28">
-     <div class="hero-copy max-w-3xl"><span data-template-id="hero-badge" class="canva-tag hero-stamp" style="background: rgba(255, 255, 255, 0.098); color: rgb(255, 255, 255); font-weight: 700;"><i data-lucide="sparkles" width="15" height="15"></i><span data-template-id="hero-badge-text" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Catálogo Digital</span></span>
-      <h1 id="hero-title" data-template-id="hero-title" class="canva-text mt-6 max-w-2xl text-5xl font-bold leading-[.92] text-white sm:text-6xl md:text-8xl" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 32px;">artesanatos em tecido para deixar a rotina mais bonita.</h1>
-      <p data-template-id="hero-subtitle" class="canva-text mt-6 max-w-xl text-lg leading-relaxed text-white/90 md:text-xl" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 20px; line-height: 1.45;">Panos de prato, toalhas, capas de caderno e mimos costurados com carinho para presentear ou decorar.</p><a data-template-id="hero-cta" class="canva-link mt-8 inline-flex items-center gap-2 rounded-full border border-white bg-white px-6 py-3 font-bold text-[#254235] no-underline transition hover:bg-[#f2d5c6]" href="#catalogo" style="background: rgb(255, 255, 255); color: rgb(37, 66, 53); font-weight: 700;"> <i data-lucide="arrow-down" width="18" height="18"></i><span data-template-id="hero-cta-text" class="canva-text" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 16px;">Conhecer o catálogo</span> </a>
-     </div>
-    </div><a class="hero-scroll" href="#catalogo">Explorar <i data-lucide="arrow-right" width="15" height="15"></i></a>
-   </section>
-   <main>
-    <section id="catalogo" class="catalog-section w-full px-5 py-16 md:px-8 md:py-24" aria-labelledby="catalog-title">
-     <div class="site-width">
-      <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
-       <div class="max-w-xl">
-        <p data-template-id="catalog-eyebrow" class="canva-text category-label" style="color: rgb(191, 112, 72); font-weight: 700; font-style: normal; font-size: 12px;">Escolha com carinho</p>
-        <h2 id="catalog-title" data-template-id="catalog-title" class="canva-text section-title mt-3 text-4xl font-bold leading-none md:text-5xl" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 24px;">Peças em tecido feitas para durar</h2>
-        <p data-template-id="catalog-description" class="canva-text mt-4 leading-relaxed text-[#667268]" style="color: rgb(102, 114, 104); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.5;">Explore itens artesanais para cozinha, mesa posta, papelaria e pequenos presentes personalizados.</p>
-       </div>
-       <p id="result-count" class="text-sm font-bold text-[#667268]" aria-live="polite"></p>
-      </div>
-      <div class="mt-10">
-       <div class="search-box flex items-center gap-3 px-5 py-4"><i data-lucide="search" width="20" height="20" class="text-[#667268]" aria-hidden="true"></i> <label for="search-input" class="sr-only">Buscar no catálogo</label> <input id="search-input" data-template-id="search-input" class="canva-input" type="search" autocomplete="off" placeholder="Busque por panos, toalhas, capas ou presentes..." style="font-weight: 400; font-style: normal; font-size: 16px;"> <button id="clear-search" class="text-[#667268] hover:text-[#254235]" type="button" aria-label="Limpar busca"> <i data-lucide="x" width="20" height="20"></i> </button>
-       </div>
-       <div class="mt-5 flex flex-wrap gap-2.5" aria-label="Filtros de categoria"><button data-template-id="filter-all" class="canva-button filter-chip is-active" type="button" data-category-filter="all" style="background: rgb(37, 66, 53); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Todos</button> <button data-template-id="filter-kitchen" class="canva-button filter-chip" type="button" data-category-filter="cozinha" style="background: transparent; color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 16px;">Cozinha</button> <button data-template-id="filter-bath" class="canva-button filter-chip" type="button" data-category-filter="banho" style="background: transparent; color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 16px;">Banho</button> <button data-template-id="filter-stationery" class="canva-button filter-chip" type="button" data-category-filter="papelaria" style="background: transparent; color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 16px;">Papelaria</button> <button data-template-id="filter-table" class="canva-button filter-chip" type="button" data-category-filter="mesa" style="background: transparent; color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 16px;">Mesa posta</button> <button data-template-id="filter-accessories" class="canva-button filter-chip" type="button" data-category-filter="acessorios" style="background: transparent; color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 16px;">Acessórios</button>
-       </div>
-      </div>
-      <div id="product-grid" class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-       <article class="product-card" data-product-card="" data-category="cozinha">
-        <div class="overflow-hidden">
-         <img data-template-id="product-one-image" class="canva-image product-image" loading="lazy" src="assets/products/pano-de-prato-bordado.png" alt="Pano de prato de tecido com bordado artesanal.">
-        </div>
-        <div class="p-6">
-         <p data-template-id="product-one-category" class="canva-text category-label" style="color: rgb(191, 112, 72); font-weight: 700; font-style: normal; font-size: 12px;">Cozinha</p>
-         <h3 data-template-id="product-one-name" class="canva-text mt-2 text-2xl font-bold" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 27px;">Pano Bordado Afeto</h3>
-         <p data-template-id="product-one-description" class="canva-text mt-3 min-h-[3rem] text-sm leading-relaxed text-[#667268]" style="color: rgb(102, 114, 104); font-weight: 400; font-style: normal; font-size: 14px; line-height: 1.5;">Pano de prato com acabamento caprichado e bordado feito à mão.</p>
-         <div class="mt-6 flex items-center justify-between gap-4"><span data-template-id="product-one-price" class="canva-text text-lg font-bold text-[#254235]" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 18px;">R$ 120,00</span> <button data-template-id="product-one-details" class="canva-button details-button px-4 py-2.5 text-sm" type="button" data-open-detail="one" style="background: rgb(37, 66, 53); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Ver detalhes</button>
-         </div>
-        </div>
-       </article>
-       <article class="product-card" data-product-card="" data-category="banho">
-        <div class="overflow-hidden">
-         <img data-template-id="product-two-image" class="canva-image product-image" loading="lazy" src="assets/products/toalha-lavabo-aplicada.png" alt="Toalha de lavabo de tecido com aplicação artesanal.">
-        </div>
-        <div class="p-6">
-         <p data-template-id="product-two-category" class="canva-text category-label" style="color: rgb(191, 112, 72); font-weight: 700; font-style: normal; font-size: 12px;">Banho</p>
-         <h3 data-template-id="product-two-name" class="canva-text mt-2 text-2xl font-bold" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 27px;">Toalha Lavabo Encanto</h3>
-         <p data-template-id="product-two-description" class="canva-text mt-3 min-h-[3rem] text-sm leading-relaxed text-[#667268]" style="color: rgb(102, 114, 104); font-weight: 400; font-style: normal; font-size: 14px; line-height: 1.5;">Toalha delicada com aplicação de tecido para deixar o ambiente mais acolhedor.</p>
-         <div class="mt-6 flex items-center justify-between gap-4"><span data-template-id="product-two-price" class="canva-text text-lg font-bold text-[#254235]" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 18px;">R$ 150,00</span> <button data-template-id="product-two-details" class="canva-button details-button px-4 py-2.5 text-sm" type="button" data-open-detail="two" style="background: rgb(37, 66, 53); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Ver detalhes</button>
-         </div>
-        </div>
-       </article>
-       <article class="product-card" data-product-card="" data-category="papelaria">
-        <div class="overflow-hidden">
-         <img data-template-id="product-three-image" class="canva-image product-image" loading="lazy" src="assets/products/capa-caderno-tecido.png" alt="Capa de caderno revestida com tecido artesanal.">
-        </div>
-        <div class="p-6">
-         <p data-template-id="product-three-category" class="canva-text category-label" style="color: rgb(191, 112, 72); font-weight: 700; font-style: normal; font-size: 12px;">Papelaria</p>
-         <h3 data-template-id="product-three-name" class="canva-text mt-2 text-2xl font-bold" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 27px;">Capa de Caderno Jardim</h3>
-         <p data-template-id="product-three-description" class="canva-text mt-3 min-h-[3rem] text-sm leading-relaxed text-[#667268]" style="color: rgb(102, 114, 104); font-weight: 400; font-style: normal; font-size: 14px; line-height: 1.5;">Capa exclusiva de tecido para proteger e personalizar seu caderno.</p>
-         <div class="mt-6 flex items-center justify-between gap-4"><span data-template-id="product-three-price" class="canva-text text-lg font-bold text-[#254235]" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 18px;">R$ 58,00</span> <button data-template-id="product-three-details" class="canva-button details-button px-4 py-2.5 text-sm" type="button" data-open-detail="three" style="background: rgb(37, 66, 53); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Ver detalhes</button>
-         </div>
-        </div>
-       </article>
-       <article class="product-card" data-product-card="" data-category="mesa">
-        <div class="overflow-hidden">
-         <img data-template-id="product-four-image" class="canva-image product-image" loading="lazy" src="assets/products/jogo-americano-dupla-face.png" alt="Jogo americano dupla face feito com tecidos artesanais.">
-        </div>
-        <div class="p-6">
-         <p data-template-id="product-four-category" class="canva-text category-label" style="color: rgb(191, 112, 72); font-weight: 700; font-style: normal; font-size: 12px;">Mesa posta</p>
-         <h3 data-template-id="product-four-name" class="canva-text mt-2 text-2xl font-bold" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 27px;">Jogo Americano Dupla Face</h3>
-         <p data-template-id="product-four-description" class="canva-text mt-3 min-h-[3rem] text-sm leading-relaxed text-[#667268]" style="color: rgb(102, 114, 104); font-weight: 400; font-style: normal; font-size: 14px; line-height: 1.5;">Peça versátil e reversível para compor a mesa com praticidade e charme.</p>
-         <div class="mt-6 flex items-center justify-between gap-4"><span data-template-id="product-four-price" class="canva-text text-lg font-bold text-[#254235]" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 18px;">R$ 180,00</span> <button data-template-id="product-four-details" class="canva-button details-button px-4 py-2.5 text-sm" type="button" data-open-detail="four" style="background: rgb(37, 66, 53); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Ver detalhes</button>
-         </div>
-        </div>
-       </article>
-       <article class="product-card" data-product-card="" data-category="acessorios">
-        <div class="overflow-hidden">
-         <img data-template-id="product-five-image" class="canva-image product-image" loading="lazy" src="assets/products/necessaire-artesanal.png" alt="Necessaire artesanal confeccionada com tecido.">
-        </div>
-        <div class="p-6">
-         <p data-template-id="product-five-category" class="canva-text category-label" style="color: rgb(191, 112, 72); font-weight: 700; font-style: normal; font-size: 12px;">Acessórios</p>
-         <h3 data-template-id="product-five-name" class="canva-text mt-2 text-2xl font-bold" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 27px;">Necessaire Artesanal</h3>
-         <p data-template-id="product-five-description" class="canva-text mt-3 min-h-[3rem] text-sm leading-relaxed text-[#667268]" style="color: rgb(102, 114, 104); font-weight: 400; font-style: normal; font-size: 14px; line-height: 1.5;">Necessaire prática, forrada e costurada com atenção a cada detalhe.</p>
-         <div class="mt-6 flex items-center justify-between gap-4"><span data-template-id="product-five-price" class="canva-text text-lg font-bold text-[#254235]" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 18px;">R$ 135,00</span> <button data-template-id="product-five-details" class="canva-button details-button px-4 py-2.5 text-sm" type="button" data-open-detail="five" style="background: rgb(37, 66, 53); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Ver detalhes</button>
-         </div>
-        </div>
-       </article>
-       <article class="product-card" data-product-card="" data-category="cozinha">
-        <div class="overflow-hidden">
-         <img data-template-id="product-six-image" class="canva-image product-image" loading="lazy" src="assets/products/porta-talheres-tecido.png" alt="Porta-talheres de tecido feito à mão.">
-        </div>
-        <div class="p-6">
-         <p data-template-id="product-six-category" class="canva-text category-label" style="color: rgb(191, 112, 72); font-weight: 700; font-style: normal; font-size: 12px;">Cozinha</p>
-         <h3 data-template-id="product-six-name" class="canva-text mt-2 text-2xl font-bold" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 27px;">Porta-talheres de Tecido</h3>
-         <p data-template-id="product-six-description" class="canva-text mt-3 min-h-[3rem] text-sm leading-relaxed text-[#667268]" style="color: rgb(102, 114, 104); font-weight: 400; font-style: normal; font-size: 14px; line-height: 1.5;">Organizador charmoso para levar mais praticidade à mesa e à cozinha.</p>
-         <div class="mt-6 flex items-center justify-between gap-4"><span data-template-id="product-six-price" class="canva-text text-lg font-bold text-[#254235]" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 18px;">R$ 35,00</span> <button data-template-id="product-six-details" class="canva-button details-button px-4 py-2.5 text-sm" type="button" data-open-detail="six" style="background: rgb(37, 66, 53); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Ver detalhes</button>
-         </div>
-        </div>
-       </article>
-      </div>
-      <div id="empty-state" data-template-id="empty-state" class="canva-banner empty-panel hidden-view mt-8 px-6 py-14 text-center" style="background: rgba(255, 255, 255, 0.6);"><i data-lucide="search-x" width="32" height="32" class="mx-auto text-[#bf655e]" aria-hidden="true"></i>
-      <h3 data-template-id="empty-title" class="canva-text mt-4 text-2xl font-bold" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 28px;">Nenhuma peça encontrada</h3>
-       <p data-template-id="empty-description" class="canva-text mx-auto mt-2 max-w-md text-[#667268]" style="color: rgb(102, 114, 104); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.5;">Tente outro termo de busca ou escolha uma categoria diferente.</p>
-      </div>
-     </div>
-    </section>
-    <section id="sobre" class="w-full bg-[#efe4d6] px-5 py-16 md:px-8 md:py-20" aria-labelledby="about-title">
-     <div class="site-width grid gap-8 md:grid-cols-[.8fr_1.2fr] md:items-center">
-      <div class="rounded-full border border-[#bf7048]/30 p-7 text-center text-[#bf7048] md:p-10"><i data-lucide="scissors" width="65" height="65" stroke-width="1.25" aria-hidden="true"></i>
-      </div>
-      <div>
-      <p data-template-id="about-eyebrow" class="canva-text category-label" style="color: rgb(191, 112, 72); font-weight: 700; font-style: normal; font-size: 12px;">Feito à mão</p>
-       <h2 id="about-title" data-template-id="about-title" class="canva-text section-title mt-3 text-4xl font-bold leading-none md:text-5xl" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 24px;">Presentes que falam sem palavras</h2>
-      <p data-template-id="about-description" class="canva-text mt-5 max-w-2xl leading-relaxed text-[#526058]" style="color: rgb(82, 96, 88); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.6;">Cada peça é costurada com cuidado, combinando tecidos, cores e acabamentos para trazer beleza e praticidade à rotina.</p>
-      </div>
-     </div>
-    </section>
-   </main>
-   <footer id="contato" data-template-id="footer-section" class="canva-footer w-full px-5 py-14 text-white md:px-8" style="background: rgb(30, 56, 44);">
-    <div class="site-width grid gap-10 md:grid-cols-3">
-     <div>
-      <p data-template-id="footer-brand" class="canva-text text-2xl font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 30px;">Arte em Tecido</p>
-      <p data-template-id="footer-note" class="canva-text mt-4 max-w-sm leading-relaxed text-white/70" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.55;">Peças artesanais costuradas para deixar a rotina mais bonita.</p>
-     </div>
-     <div>
-      <h2 data-template-id="footer-location-title" class="canva-text text-lg font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 18px;">Onde estamos</h2>
-      <p data-template-id="footer-city" class="canva-text mt-3 text-white/75" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.6;">Sua cidade, PR
-Endereço a personalizar</p>
-     </div>
-     <div>
-      <h2 data-template-id="footer-hours-title" class="canva-text text-lg font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 18px;">Horário de atendimento</h2>
-      <p data-template-id="footer-hours" class="canva-text mt-3 whitespace-pre-line leading-relaxed text-white/75" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.6;">Segunda a sábado · 9h às 18h
-Domingo · 9h às 13h</p>
-     </div>
-    </div>
-    <div class="site-width footer-rule mt-12 border-t pt-6">
-     <p data-template-id="footer-disclaimer" class="canva-text text-sm text-white/60" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.5;">Catálogo de consulta. Produtos, preços, disponibilidade e imagens podem ser personalizados. Não realizamos pedidos online por esta página.</p>
-    </div>
-   </footer>
-  </div>
-  <div id="detail-overlay" class="detail-overlay hidden-view" role="dialog" aria-modal="true" aria-label="Detalhes do produto">
-   <article data-detail-panel="one" class="detail-panel hidden-view">
-    <div class="grid md:grid-cols-2"><img data-template-id="detail-one-image" class="canva-image detail-image" loading="lazy" src="assets/products/pano-de-prato-bordado.png" alt="Pano de prato de tecido com bordado artesanal.">
-     <div class="p-7 md:p-9"><button class="close-button ml-auto" type="button" data-close-detail="" aria-label="Fechar detalhes"><i data-lucide="x" width="21" height="21"></i></button>
-      <p data-template-id="detail-one-category" class="canva-text category-label mt-7" style="color: rgb(191, 112, 72); font-weight: 700; font-style: normal; font-size: 12px;">Cozinha</p>
-      <h2 data-template-id="detail-one-title" class="canva-text detail-title mt-2 text-4xl font-bold" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 24px;">Pano Bordado Afeto</h2>
-      <p data-template-id="detail-one-description" class="canva-text mt-5 leading-relaxed text-[#667268]" style="color: rgb(102, 114, 104); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.6;">Pano de prato com acabamento caprichado e bordado feito à mão para trazer charme à cozinha.</p>
-      <p data-template-id="detail-one-price" class="canva-text mt-6 text-2xl font-bold text-[#254235]" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 24px;">R$ 120,00</p><button data-template-id="detail-one-add" class="canva-button add-button mt-6 w-full px-5 py-3" type="button" data-add-cart="" style="background: rgb(37, 66, 53); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Adicionar à sacola visual</button>
-     </div>
-    </div>
-   </article>
-   <article data-detail-panel="two" class="detail-panel hidden-view">
-    <div class="grid md:grid-cols-2"><img data-template-id="detail-two-image" class="canva-image detail-image" loading="lazy" src="assets/products/toalha-lavabo-aplicada.png" alt="Toalha de lavabo de tecido com aplicação artesanal.">
-     <div class="p-7 md:p-9"><button class="close-button ml-auto" type="button" data-close-detail="" aria-label="Fechar detalhes"><i data-lucide="x" width="21" height="21"></i></button>
-      <p data-template-id="detail-two-category" class="canva-text category-label mt-7" style="color: rgb(191, 112, 72); font-weight: 700; font-style: normal; font-size: 12px;">Banho</p>
-      <h2 data-template-id="detail-two-title" class="canva-text detail-title mt-2 text-4xl font-bold" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 24px;">Toalha Lavabo Encanto</h2>
-      <p data-template-id="detail-two-description" class="canva-text mt-5 leading-relaxed text-[#667268]" style="color: rgb(102, 114, 104); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.6;">Toalha delicada com aplicação de tecido, feita para deixar o ambiente mais acolhedor.</p>
-      <p data-template-id="detail-two-price" class="canva-text mt-6 text-2xl font-bold text-[#254235]" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 24px;">R$ 150,00</p><button data-template-id="detail-two-add" class="canva-button add-button mt-6 w-full px-5 py-3" type="button" data-add-cart="" style="background: rgb(37, 66, 53); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Adicionar à sacola visual</button>
-     </div>
-    </div>
-   </article>
-   <article data-detail-panel="three" class="detail-panel hidden-view">
-    <div class="grid md:grid-cols-2"><img data-template-id="detail-three-image" class="canva-image detail-image" loading="lazy" src="assets/products/capa-caderno-tecido.png" alt="Capa de caderno revestida com tecido artesanal.">
-     <div class="p-7 md:p-9"><button class="close-button ml-auto" type="button" data-close-detail="" aria-label="Fechar detalhes"><i data-lucide="x" width="21" height="21"></i></button>
-      <p data-template-id="detail-three-category" class="canva-text category-label mt-7" style="color: rgb(191, 112, 72); font-weight: 700; font-style: normal; font-size: 12px;">Papelaria</p>
-      <h2 data-template-id="detail-three-title" class="canva-text detail-title mt-2 text-4xl font-bold" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 24px;">Capa de Caderno Jardim</h2>
-      <p data-template-id="detail-three-description" class="canva-text mt-5 leading-relaxed text-[#667268]" style="color: rgb(102, 114, 104); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.6;">Capa exclusiva de tecido para proteger e personalizar seu caderno com estilo.</p>
-      <p data-template-id="detail-three-price" class="canva-text mt-6 text-2xl font-bold text-[#254235]" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 24px;">R$ 58,00</p><button data-template-id="detail-three-add" class="canva-button add-button mt-6 w-full px-5 py-3" type="button" data-add-cart="" style="background: rgb(37, 66, 53); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Adicionar à sacola visual</button>
-     </div>
-    </div>
-   </article>
-   <article data-detail-panel="four" class="detail-panel hidden-view">
-    <div class="grid md:grid-cols-2"><img data-template-id="detail-four-image" class="canva-image detail-image" loading="lazy" src="assets/products/jogo-americano-dupla-face.png" alt="Jogo americano dupla face feito com tecidos artesanais.">
-     <div class="p-7 md:p-9"><button class="close-button ml-auto" type="button" data-close-detail="" aria-label="Fechar detalhes"><i data-lucide="x" width="21" height="21"></i></button>
-      <p data-template-id="detail-four-category" class="canva-text category-label mt-7" style="color: rgb(191, 112, 72); font-weight: 700; font-style: normal; font-size: 12px;">Mesa posta</p>
-      <h2 data-template-id="detail-four-title" class="canva-text detail-title mt-2 text-4xl font-bold" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 24px;">Jogo Americano Dupla Face</h2>
-      <p data-template-id="detail-four-description" class="canva-text mt-5 leading-relaxed text-[#667268]" style="color: rgb(102, 114, 104); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.6;">Peça reversível e prática para compor a mesa com personalidade em qualquer ocasião.</p>
-      <p data-template-id="detail-four-price" class="canva-text mt-6 text-2xl font-bold text-[#254235]" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 24px;">R$ 180,00</p><button data-template-id="detail-four-add" class="canva-button add-button mt-6 w-full px-5 py-3" type="button" data-add-cart="" style="background: rgb(37, 66, 53); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Adicionar à sacola visual</button>
-     </div>
-    </div>
-   </article>
-   <article data-detail-panel="five" class="detail-panel hidden-view">
-    <div class="grid md:grid-cols-2"><img data-template-id="detail-five-image" class="canva-image detail-image" loading="lazy" src="assets/products/necessaire-artesanal.png" alt="Necessaire artesanal confeccionada com tecido.">
-     <div class="p-7 md:p-9"><button class="close-button ml-auto" type="button" data-close-detail="" aria-label="Fechar detalhes"><i data-lucide="x" width="21" height="21"></i></button>
-      <p data-template-id="detail-five-category" class="canva-text category-label mt-7" style="color: rgb(191, 112, 72); font-weight: 700; font-style: normal; font-size: 12px;">Acessórios</p>
-      <h2 data-template-id="detail-five-title" class="canva-text detail-title mt-2 text-4xl font-bold" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 24px;">Necessaire Artesanal</h2>
-      <p data-template-id="detail-five-description" class="canva-text mt-5 leading-relaxed text-[#667268]" style="color: rgb(102, 114, 104); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.6;">Necessaire prática, forrada e costurada com atenção a cada detalhe.</p>
-      <p data-template-id="detail-five-price" class="canva-text mt-6 text-2xl font-bold text-[#254235]" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 24px;">R$ 135,00</p><button data-template-id="detail-five-add" class="canva-button add-button mt-6 w-full px-5 py-3" type="button" data-add-cart="" style="background: rgb(37, 66, 53); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Adicionar à sacola visual</button>
-     </div>
-    </div>
-   </article>
-   <article data-detail-panel="six" class="detail-panel hidden-view">
-    <div class="grid md:grid-cols-2"><img data-template-id="detail-six-image" class="canva-image detail-image" loading="lazy" src="assets/products/porta-talheres-tecido.png" alt="Porta-talheres de tecido feito à mão.">
-     <div class="p-7 md:p-9"><button class="close-button ml-auto" type="button" data-close-detail="" aria-label="Fechar detalhes"><i data-lucide="x" width="21" height="21"></i></button>
-      <p data-template-id="detail-six-category" class="canva-text category-label mt-7" style="color: rgb(191, 112, 72); font-weight: 700; font-style: normal; font-size: 12px;">Cozinha</p>
-      <h2 data-template-id="detail-six-title" class="canva-text detail-title mt-2 text-4xl font-bold" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 24px;">Porta-talheres de Tecido</h2>
-      <p data-template-id="detail-six-description" class="canva-text mt-5 leading-relaxed text-[#667268]" style="color: rgb(102, 114, 104); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.6;">Organizador charmoso para levar mais praticidade à mesa e à cozinha.</p>
-      <p data-template-id="detail-six-price" class="canva-text mt-6 text-2xl font-bold text-[#254235]" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 24px;">R$ 35,00</p><button data-template-id="detail-six-add" class="canva-button add-button mt-6 w-full px-5 py-3" type="button" data-add-cart="" style="background: rgb(37, 66, 53); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Adicionar à sacola visual</button>
-     </div>
-    </div>
-   </article>
-  </div>
-  <aside id="cart-overlay" class="cart-overlay hidden-view" role="dialog" aria-modal="true" aria-label="Carrinho visual">
-   <div class="cart-panel">
-    <div class="flex items-center justify-between">
-     <h2 data-template-id="cart-panel-title" class="canva-text text-3xl font-bold text-[#254235]" style="color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 24px;">Sua sacola</h2><button id="close-cart" class="close-button" type="button" aria-label="Fechar carrinho"><i data-lucide="x" width="21" height="21"></i></button>
-    </div>
-    <div class="cart-icon-circle">
-     <i data-lucide="shopping-bag" width="29" height="29"></i>
-    </div>
-    <p id="cart-message" class="text-center text-lg font-bold text-[#254235]" aria-live="polite"></p>
-    <p data-template-id="cart-panel-note" class="canva-text mx-auto mt-4 max-w-xs text-center leading-relaxed text-[#667268]" style="color: rgb(102, 114, 104); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.55;">Este é um carrinho visual de consulta. Para pedidos, personalize esta área com seus canais de atendimento.</p><button id="close-cart-bottom" data-template-id="cart-close-button" class="canva-button mt-8 w-full rounded-xl border border-[#254235] px-5 py-3 font-bold text-[#254235] transition hover:bg-[#edf2ea]" type="button" style="background: transparent; color: rgb(37, 66, 53); font-weight: 700; font-style: normal; font-size: 16px;">Continuar explorando</button>
-   </div>
-  </aside>
-  <script src="/_sdk/32b5df5c9e791b84.editing_sdk.js" integrity="sha512-GR6onBO6a4OXCEWjJr3J5SnC5JY67X7RCAiMRpOa2PonluOQlBKrbHUWMck4+e73st/dspPngOjAjH//UV4K2Q=="></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      lucide.createIcons();
 
-      const searchInput = document.getElementById("search-input");
-      const cards = [...document.querySelectorAll("[data-product-card]")];
-      const filterButtons = [...document.querySelectorAll("[data-category-filter]")];
-      const emptyState = document.getElementById("empty-state");
-      const resultCount = document.getElementById("result-count");
-      const detailOverlay = document.getElementById("detail-overlay");
-      const detailPanels = [...document.querySelectorAll("[data-detail-panel]")];
-      const cartOverlay = document.getElementById("cart-overlay");
-      const cartCount = document.getElementById("cart-count");
-      const cartMessage = document.getElementById("cart-message");
-      const mobileNav = document.getElementById("mobile-nav");
-      const menuButton = document.getElementById("menu-button");
-      let activeCategory = "all";
-      let cartItems = 0;
 
-      function updateCart() {
-        cartCount.textContent = String(cartItems);
-        cartMessage.textContent = cartItems === 0
-          ? "Seu carrinho está vazio"
-          : cartItems === 1
-            ? "1 item adicionado ao carrinho"
-            : cartItems + " itens adicionados ao carrinho";
-      }
+    <main class="wrap">
+      <h1>Catálogo de peças</h1>
+      <p class="kicker">Arte em Tecido</p>
+      <section class="grid" id="grid"></section>
 
-      function applyFilters() {
-        const query = searchInput.value.trim().toLowerCase();
-        let visible = 0;
+      <section class="cta">
+        <h2>Personalize sua peça</h2>
+        <p>
+          Escolha o tecido, a cor da linha e o bordado. Também fazemos encomendas especiais para
+          presentes e datas comemorativas.
+        </p>
+        <a class="btn" id="cta-link" target="_blank" rel="noreferrer">Falar no WhatsApp</a>
+      </section>
+    </main>
 
-        cards.forEach((card) => {
-          const matchesCategory = activeCategory === "all" || card.dataset.category === activeCategory;
-          const matchesSearch = !query || card.textContent.toLowerCase().includes(query);
-          const show = matchesCategory && matchesSearch;
-          card.classList.toggle("hidden-view", !show);
-          if (show) visible += 1;
-        });
+    <footer>
+      Arte em Tecido · Artesanato feito à mão
+    </footer>
 
-        emptyState.classList.toggle("hidden-view", visible !== 0);
-        resultCount.textContent = visible === 1 ? "1 criação encontrada" : visible + " criações encontradas";
-      }
+    <script>
+      const produtos = [
+        {
+          nome: "Toalha bordada ou adesivada para banho",
+          preco: "R$ 120,00",
+          descricao: "Toalha de banho felpuda com bordado ou aplique personalizado.",
+          imagem:
+            "https://images.unsplash.com/photo-1600369672770-985fd30004eb?auto=format&fit=crop&w=900&q=80",
+        },
+        {
+          nome: "Toalha bordada ou adesivada para lavabo",
+          preco: "R$ 60,00",
+          descricao: "Toalhinha pequena de lavabo, acabamento delicado feito à mão.",
+          imagem:
+            "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=80",
+        },
+        {
+          nome: "Caderno pequeno forrado",
+          preco: "R$ 60,00",
+          descricao: "Caderno pequeno com capa forrada em tecido à sua escolha.",
+          imagem:
+            "https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=900&q=80",
+        },
+        {
+          nome: "Caderno grande forrado",
+          preco: "R$ 90,00",
+          descricao: "Caderno grande com capa forrada, resistente e personalizado.",
+          imagem:
+            "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=900&q=80",
+        },
+      ];
 
-      function openDetail(id) {
-        detailPanels.forEach((panel) => {
-          panel.classList.toggle("hidden-view", panel.dataset.detailPanel !== id);
-        });
-        detailOverlay.classList.remove("hidden-view");
-      }
+      const whatsapp = (texto) =>
+        "https://wa.me/?text=" + encodeURIComponent("Olá! Tenho interesse em: " + texto);
 
-      function closeDetail() {
-        detailOverlay.classList.add("hidden-view");
-        detailPanels.forEach(panel => panel.classList.add("hidden-view"));
-      }
-
-      filterButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          activeCategory = button.dataset.categoryFilter;
-          filterButtons.forEach(item => item.classList.toggle("is-active", item === button));
-          applyFilters();
-        });
+      const grid = document.getElementById("grid");
+      produtos.forEach((p) => {
+        const card = document.createElement("article");
+        card.className = "card";
+        card.innerHTML =
+          '<img loading="lazy" src="' +
+          p.imagem +
+          '" alt="' +
+          p.nome +
+          '" />' +
+          '<div class="card-body">' +
+          "<h2>" +
+          p.nome +
+          "</h2>" +
+          "<p>" +
+          p.descricao +
+          "</p>" +
+          '<div class="row"><span class="price">' +
+          p.preco +
+          '</span><a class="btn" target="_blank" rel="noreferrer" href="' +
+          whatsapp(p.nome) +
+          '">Encomendar</a></div>' +
+          "</div>";
+        grid.appendChild(card);
       });
 
-      searchInput.addEventListener("input", applyFilters);
-
-      document.getElementById("clear-search").addEventListener("click", () => {
-        searchInput.value = "";
-        searchInput.focus();
-        applyFilters();
-      });
-
-      document.querySelectorAll("[data-open-detail]").forEach((button) => {
-        button.addEventListener("click", () => openDetail(button.dataset.openDetail));
-      });
-
-      document.querySelectorAll("[data-close-detail]").forEach((button) => {
-        button.addEventListener("click", closeDetail);
-      });
-
-      detailOverlay.addEventListener("click", (event) => {
-        if (event.target === detailOverlay) closeDetail();
-      });
-
-      document.querySelectorAll("[data-add-cart]").forEach((button) => {
-        button.addEventListener("click", () => {
-          cartItems += 1;
-          updateCart();
-          closeDetail();
-          cartOverlay.classList.remove("hidden-view");
-        });
-      });
-
-      document.getElementById("cart-button").addEventListener("click", () => {
-        cartOverlay.classList.remove("hidden-view");
-      });
-
-      function closeCart() { cartOverlay.classList.add("hidden-view"); }
-      document.getElementById("close-cart").addEventListener("click", closeCart);
-      document.getElementById("close-cart-bottom").addEventListener("click", closeCart);
-      cartOverlay.addEventListener("click", (event) => {
-        if (event.target === cartOverlay) closeCart();
-      });
-
-      menuButton.addEventListener("click", () => {
-        const isOpen = mobileNav.classList.toggle("is-open");
-        menuButton.setAttribute("aria-expanded", String(isOpen));
-        menuButton.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
-      });
-
-      mobileNav.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileNav.classList.remove("is-open");
-          menuButton.setAttribute("aria-expanded", "false");
-          menuButton.setAttribute("aria-label", "Abrir menu");
-        });
-      });
-
-      updateCart();
-      applyFilters();
-    });
-  </script>
- 
-</body></html>
+      document.getElementById("cta-link").href = whatsapp("uma peça personalizada");
+    </script>
+  </body>
+</html>
